@@ -1,10 +1,13 @@
-import Home from "./pages/Home";
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
+
 
 const App = ()=> {
   return (
-    <>
-      <Home/>
-    </>
+    <div>
+      <Navbar/>
+      <Outlet/>
+    </div>
   );
 }
 
